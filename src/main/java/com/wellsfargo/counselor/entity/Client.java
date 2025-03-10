@@ -10,7 +10,6 @@ public class Client {
     private int clientId;
 
     @ManyToOne
-    @JoinColumn(name = "clientId")
     private Advisor advisor;
 
     @Column(nullable = false)

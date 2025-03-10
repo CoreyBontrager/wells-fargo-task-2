@@ -12,7 +12,6 @@ public class Security {
     private int securityId;
 
     @ManyToOne
-    @JoinColumn(name = "securityId")
     private Portfolio portfolio;
 
     @Column(nullable = false)

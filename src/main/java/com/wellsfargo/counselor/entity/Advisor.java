@@ -12,10 +12,6 @@ public class Advisor {
     @GeneratedValue()
     private long advisorId;
 
-    @OneToMany (mappedBy = "advisorId")
-    private List<Client> clients;
-
-
     @Column(nullable = false)
     private String firstName;
 

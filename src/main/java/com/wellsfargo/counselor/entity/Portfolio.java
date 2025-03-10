@@ -11,8 +11,7 @@ public class Portfolio {
     @GeneratedValue
     private int portfolioId;
 
-    @OneToOne
-    @JoinColumn(name = "portfolioId")
+    @ManyToOne
     private Client client;
 
     @Column(nullable = false)
